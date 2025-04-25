@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\lenovo\source\repos\HH_MK3\build\CMakeFiles\440b75df613a217e95c73c9b98002cc1\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{FA5788A5-C5D4-3992-885E-C6820EF9D09A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

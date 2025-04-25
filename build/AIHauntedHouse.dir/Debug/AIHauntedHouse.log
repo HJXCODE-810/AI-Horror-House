@@ -1,0 +1,88 @@
+﻿  main.cpp
+  Game.cpp
+  Renderer.cpp
+C:\Users\lenovo\source\repos\HH_MK3\src\Game.cpp(86,18): error C2664: 'void AudioManager::playAmbientSound(unsigned int,bool)': cannot convert argument 1 from 'const char *' to 'unsigned int'
+      C:\Users\lenovo\source\repos\HH_MK3\src\Game.cpp(86,35):
+      There is no context in which this conversion is possible
+      C:\Users\lenovo\source\repos\HH_MK3\src\AudioManager.h(21,10):
+      see declaration of 'AudioManager::playAmbientSound'
+      C:\Users\lenovo\source\repos\HH_MK3\src\Game.cpp(86,18):
+      while trying to match the argument list '(const char *, bool)'
+  
+C:\Users\lenovo\source\repos\HH_MK3\src\Game.cpp(226,15): error C2660: 'Renderer::drawFurniture': function does not take 0 arguments
+      C:\Users\lenovo\source\repos\HH_MK3\src\Renderer.h(27,10):
+      see declaration of 'Renderer::drawFurniture'
+      C:\Users\lenovo\source\repos\HH_MK3\src\Game.cpp(226,15):
+      while trying to match the argument list '()'
+  
+C:\Users\lenovo\source\repos\HH_MK3\src\Game.cpp(239,21): error C3867: 'Renderer::setLight': non-standard syntax; use '&' to create a pointer to member
+C:\Users\lenovo\source\repos\HH_MK3\src\Game.cpp(248,15): error C2039: 'drawHUD': is not a member of 'Renderer'
+      C:\Users\lenovo\source\repos\HH_MK3\src\Renderer.h(15,7):
+      see declaration of 'Renderer'
+  
+C:\Users\lenovo\source\repos\HH_MK3\src\Game.cpp(257,15): error C2039: 'flickerLights': is not a member of 'Renderer'
+      C:\Users\lenovo\source\repos\HH_MK3\src\Renderer.h(15,7):
+      see declaration of 'Renderer'
+  
+C:\Users\lenovo\source\repos\HH_MK3\src\Game.cpp(263,11): error C2039: 'spawnRandom': is not a member of 'Ghost'
+      C:\Users\lenovo\source\repos\HH_MK3\src\Ghost.h(10,7):
+      see declaration of 'Ghost'
+  
+C:\Users\lenovo\source\repos\HH_MK3\src\Renderer.cpp(79,24): error C2039: 'loadAll': is not a member of 'TextureManager'
+      C:\Users\lenovo\source\repos\HH_MK3\src\TextureManager.h(12,7):
+      see declaration of 'TextureManager'
+  
+C:\Users\lenovo\source\repos\HH_MK3\src\Renderer.cpp(168,16): error C2511: 'void Renderer::drawWall(...)': overloaded member function not found in 'Renderer'
+      C:\Users\lenovo\source\repos\HH_MK3\src\Renderer.h(15,7):
+      see declaration of 'Renderer'
+  
+  TextureManager.cpp
+  InputHandler.cpp
+  Camera.cpp
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(1,6): error C2653: 'Camera': is not a class or namespace name
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(3,20): error C2065: 'angleY': undeclared identifier
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(3,16): error C3861: 'sin': identifier not found
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(4,21): error C2065: 'angleY': undeclared identifier
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(4,17): error C3861: 'cos': identifier not found
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(5,5): error C2065: 'x': undeclared identifier
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(6,5): error C2065: 'z': undeclared identifier
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(10,6): error C2653: 'Camera': is not a class or namespace name
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(12,20): error C2065: 'angleY': undeclared identifier
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(12,16): error C3861: 'cos': identifier not found
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(13,20): error C2065: 'angleY': undeclared identifier
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(13,16): error C3861: 'sin': identifier not found
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(14,5): error C2065: 'x': undeclared identifier
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(15,5): error C2065: 'z': undeclared identifier
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(18,6): error C2653: 'Camera': is not a class or namespace name
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(19,5): error C2065: 'angleY': undeclared identifier
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(20,5): error C2065: 'angleY': undeclared identifier
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(20,19): error C2065: 'angleY': undeclared identifier
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(20,34): error C2065: 'M_PI': undeclared identifier
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(20,14): error C3861: 'fmod': identifier not found
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(23,6): error C2653: 'Camera': is not a class or namespace name
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(24,5): error C2065: 'angleX': undeclared identifier
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(25,5): error C3861: 'clampPitch': identifier not found
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(28,6): error C2653: 'Camera': is not a class or namespace name
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(28,14): error C2270: 'applyViewMatrix': modifiers not allowed on nonmember functions
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(31,19): error C2065: 'x': undeclared identifier
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(31,27): error C2065: 'angleY': undeclared identifier
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(31,23): error C3861: 'sin': identifier not found
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(31,41): error C2065: 'angleX': undeclared identifier
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(31,37): error C3861: 'cos': identifier not found
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(32,19): error C2065: 'y': undeclared identifier
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(32,27): error C2065: 'angleX': undeclared identifier
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(32,23): error C3861: 'sin': identifier not found
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(33,19): error C2065: 'z': undeclared identifier
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(33,27): error C2065: 'angleY': undeclared identifier
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(33,23): error C3861: 'cos': identifier not found
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(33,41): error C2065: 'angleX': undeclared identifier
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(33,37): error C3861: 'cos': identifier not found
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(41,15): error C2065: 'x': undeclared identifier
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(41,18): error C2065: 'y': undeclared identifier
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(41,21): error C2065: 'z': undeclared identifier
+C:\Users\lenovo\source\repos\HH_MK3\src\Camera.cpp(41,5): error C3861: 'gluLookAt': identifier not found
+  AudioManager.cpp
+C:\Users\lenovo\source\repos\HH_MK3\src\AudioManager.cpp(4,10): error C1083: Cannot open include file: 'AL/al.h': No such file or directory
+  Ghost.cpp
+  Maze.cpp
+  Generating Code...
