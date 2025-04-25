@@ -1,0 +1,63 @@
+{
+    "version": 3,
+    "configurePresets": [
+      {
+        "name": "windows-base",
+        "hidden": true,
+        "generator": "Visual Studio 17 2022", // Or "Visual Studio 17 2022" if you prefer MSBuild
+        "binaryDir": "${sourceDir}/build/${presetName}",
+        "installDir": "${sourceDir}/install/${presetName}",
+        "cacheVariables": {
+          "CMAKE_C_COMPILER": "cl.exe",
+          "CMAKE_CXX_COMPILER": "cl.exe",
+          // IMPORTANT: This line tells CMake how to find vcpkg.
+          // Make sure the path is correct for your system.
+          // Using $env{VCPKG_ROOT} requires you to set the VCPKG_ROOT environment variable.
+          // Alternatively, replace "$env{VCPKG_ROOT}" with the actual full path like:
+          // "C:/dev/vcpkg/scripts/buildsystems/vcpkg.cmake" (use forward slashes).
+          "CMAKE_TOOLCHAIN_FILE": "C:/dev/vcpkg/scripts/buildsystems/vcpkg.cmake"
+          //"-DCMAKE_TOOLCHAIN_FILE":"C:/dev/vcpkg/scripts/buildsystems/vcpkg.cmake"
+
+        },
+        "condition": {
+          "type": "equals",
+          "lhs": "${hostSystemName}",
+          "rhs": "Windows"
+        }
+      },
+      {
+        "name": "x64-debug",
+        "displayName": "x64 Debug",
+        "inherits": "windows-base",
+        "architecture": {
+          "value": "x64",
+          "strategy": "external"
+        },
+        "cacheVariables": { "CMAKE_BUILD_TYPE": "Debug" }
+      },
+      {
+        "name": "x64-release",
+        "displayName": "x64 Release",
+        "inherits": "windows-base",
+        "architecture": {
+          "value": "x64",
+          "strategy": "external"
+        },
+        "cacheVariables": { "CMAKE_BUILD_TYPE": "Release" }
+      }
+      // You can add more presets for different configurations (e.g., x86) if needed
+    ],
+    "buildPresets": [
+      {
+        "name": "debug-default",
+        "configurePreset": "x64-debug",
+        "displayName": "Build Debug"
+      },
+      {
+         "name": "release-default",
+         "configurePreset": "x64-release",
+         "displayName": "Build Release"
+      }
+    ]
+  }
+  
